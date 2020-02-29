@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 html {
   font-size: 12px;
   scroll-behavior: smooth;
@@ -7,7 +9,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Roboto";
   padding: 0;
   margin: 0;
 }
@@ -24,6 +26,14 @@ a:hover {
 a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Serif';
+}
+
+p {
+  font-size: 1.1rem;
 }
 
 .img_wrapper {
@@ -61,20 +71,34 @@ a {
 }
 
 .top-navbar .navbar-nav .active {
-  background: #5B86E5;
+  background: #00B4DB;
   color: white;
   border-radius: .3rem;
   padding: 0 1rem;
 }
 
+.svg-global {
+  height: 3rem;
+  width: 3rem;
+}
+
+.svg-global svg {
+  height: 3rem;
+  width: 3rem;
+}
+
+.svg-blue svg {
+  fill: #00B4DB;
+}
+
 .landing-page {
   width: 100%;
   height: 100vh;
-  background: #36D1DC;
+  background: #00B4DB;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#5B86E5), to(#36D1DC));
-  background: linear-gradient(to right, #5B86E5, #36D1DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
+  background: linear-gradient(to bottom, #00B4DB, #0083B0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white !important;
   position: relative;
@@ -103,14 +127,16 @@ a {
 }
 
 .landing-page__text-wrapper h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .landing-page__text-wrapper p {
   margin-top: 1rem;
+  font-size: 1.2rem;
 }
 
 .landing-page__text-wrapper a {
+  font-size: 1.2rem;
   margin-top: 2rem;
 }
 
@@ -168,18 +194,26 @@ a {
 }
 
 .why-royal {
-  background: #f5f5f5;
+  background: #F5F5F5;
   padding: 4rem 0;
+}
+
+.why-royal h1 {
+  color: #00B4DB;
+}
+
+.why-royal h5 {
+  font-weight: 700;
 }
 
 .testimonial {
   width: 100%;
   overflow: hidden;
-  background: #36D1DC;
+  background: #00B4DB;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#5B86E5), to(#36D1DC));
-  background: linear-gradient(to right, #5B86E5, #36D1DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
+  background: linear-gradient(to bottom, #00B4DB, #0083B0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white !important;
   position: relative;
@@ -228,12 +262,17 @@ a {
           flex-direction: column;
 }
 
-.testimonial__slider__item .words {
-  margin-top: 2rem;
+.testimonial__slider__item .text p {
+  margin-bottom: 0;
 }
 
-.testimonial__slider__item .words p {
-  text-align: justify;
+.testimonial__slider__item .words {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.testimonial__slider__item .quote-svg i {
+  font-size: 2rem;
 }
 
 .testimonial__slider .fas.fa-chevron-left.slick-arrow {

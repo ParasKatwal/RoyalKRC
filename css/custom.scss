@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 $color:(
-    primary: #0000,
+    primary: #00B4DB,
+    primaryDark: #0083B0,
     secondary: #0000,
-    gray-bg: #f5f5f5,
-    text: #5B86E5
+    gray-bg: #F5F5F5,
+    text: #5B86E5,
 );
 
 @function color($colorName){
@@ -16,7 +19,8 @@ html{
 }
 body{
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    // font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', ;
     padding: 0;
     margin: 0;
 }
@@ -32,6 +36,12 @@ a{
     -moz-transition: 0.5s;
     transition: 0.5s;  
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'PT Serif';
+}
+p{
+    font-size: 1.1rem;
+}
 .img_wrapper{
     background-size: cover !important;
     background-position: 50% 50% !important;
@@ -39,6 +49,7 @@ a{
     background-repeat: no-repeat !important;
 }
 
+// Custom Components
 .custom-container{
     width: 75%;
     margin: auto;
@@ -60,20 +71,34 @@ a{
             }
         }
         .active{
-            background: color(text);
+            background: color(primary);
             color: white;
             border-radius: .3rem;
             padding: 0 1rem;
         }
     }
 }
+.svg-global{
+    height: 3rem;
+    width: 3rem;
+    svg{
+        height: 3rem;
+        width: 3rem;
+    }
+}
+.svg-blue{
+    svg{
+        fill: color(primary);
+    }
+}
 
+// Home
 .landing-page{
     width: 100%;
     height: 100vh;
-    background: #36D1DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: color(primary);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, color(primary), color(primaryDark));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, color(primary), color(primaryDark)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white !important;
     position: relative;
     img{
@@ -88,12 +113,14 @@ a{
         justify-content: center;
         flex-direction: column;
         h1{
-            font-size: 3rem;
+            font-size: 4rem;
         }
         p{
             margin-top: 1rem;
+            font-size: 1.2rem;
         }
         a{
+            font-size: 1.2rem;
             margin-top: 2rem;
             i{
                 border: 1px solid white;
@@ -147,14 +174,20 @@ a{
 .why-royal{
     background: color(gray-bg);
     padding: 4rem 0;
+    h1{
+        color: color(primary );
+    }
+    h5{
+        font-weight: 700;
+    }
 }
 
 .testimonial{
     width: 100%;
     overflow: hidden;
-    background: #36D1DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: color(primary);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, color(primary), color(primaryDark));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, color(primary), color(primaryDark)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white !important;
     position: relative;
     h1{
@@ -184,11 +217,17 @@ a{
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                p{
+                    margin-bottom: 0;
+                }
             }
             .words{
                 margin-top: 2rem;
-                p{
-                    text-align: justify;
+                position: relative;
+            }
+            .quote-svg{
+                i{
+                    font-size: 2rem;
                 }
             }
         }
