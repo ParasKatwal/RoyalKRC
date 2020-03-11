@@ -36,6 +36,13 @@ p {
   font-size: 1.1rem;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .img_wrapper {
   background-size: cover !important;
   background-position: 50% 50% !important;
@@ -196,6 +203,7 @@ p {
 .why-royal {
   background: #F5F5F5;
   padding: 4rem 0;
+  padding-top: 6rem;
 }
 
 .why-royal h1 {
@@ -291,5 +299,23 @@ p {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 3rem;
+}
+
+.in-touch h1 {
+  color: #0083B0;
+}
+
+.in-touch .form-control {
+  padding: 1.4rem 1rem;
+}
+
+.in-touch button {
+  background: #0083B0;
+  color: white;
+  padding: .5rem 4rem;
+}
+
+footer h5 {
+  color: #0083B0;
 }
 /*# sourceMappingURL=custom.css.map */

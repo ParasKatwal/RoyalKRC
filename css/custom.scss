@@ -6,7 +6,7 @@ $color:(
     primaryDark: #0083B0,
     secondary: #0000,
     gray-bg: #F5F5F5,
-    text: #5B86E5,
+    text: #0083B0,
 );
 
 @function color($colorName){
@@ -41,6 +41,11 @@ h1,h2,h3,h4,h5,h6{
 }
 p{
     font-size: 1.1rem;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .img_wrapper{
     background-size: cover !important;
@@ -174,6 +179,7 @@ p{
 .why-royal{
     background: color(gray-bg);
     padding: 4rem 0;
+    padding-top: 6rem;
     h1{
         color: color(primary );
     }
@@ -245,5 +251,25 @@ p{
             transform: translateY(-50%);
             font-size: 3rem;
         }
+    }
+}
+
+.in-touch{
+    h1{
+        color: color(text);
+    }
+    .form-control{
+        padding: 1.4rem 1rem;
+    }
+    button{
+        background: color(text);
+        color: white;
+        padding: .5rem 4rem;
+    }
+}
+
+footer{
+    h5{
+        color: color(text);
     }
 }
