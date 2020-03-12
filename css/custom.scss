@@ -47,6 +47,10 @@ img{
     height: 100%;
     object-fit: cover;
 }
+ul{
+    list-style: none;
+    padding: 0;
+}
 .img_wrapper{
     background-size: cover !important;
     background-position: 50% 50% !important;
@@ -255,6 +259,7 @@ img{
 }
 
 .in-touch{
+    padding-bottom: 2rem;
     h1{
         color: color(text);
     }
@@ -269,7 +274,31 @@ img{
 }
 
 footer{
+    padding-top: 3rem;
+    background: rgba(#0083B0, .1);
     h5{
         color: color(text);
+        font-weight: 600;
+        margin-bottom: 1.8rem;
+    }
+    img{
+        object-fit: contain;
+    }
+    ul{
+        li{
+            margin: .5rem 0;
+        }
+        svg{
+            margin-right: .4rem;
+            padding: .1rem;
+        }
+    }
+    .copyright{
+        padding: 1rem 3rem;
+        margin: 1rem 2rem 0 2rem;
+        border-top: 1px solid rgba(0,0,0, .2);
+        p{
+            margin: 0;
+        }
     }
 }

@@ -43,6 +43,11 @@ img {
      object-fit: cover;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 .img_wrapper {
   background-size: cover !important;
   background-position: 50% 50% !important;
@@ -301,6 +306,10 @@ img {
   font-size: 3rem;
 }
 
+.in-touch {
+  padding-bottom: 2rem;
+}
+
 .in-touch h1 {
   color: #0083B0;
 }
@@ -315,7 +324,38 @@ img {
   padding: .5rem 4rem;
 }
 
+footer {
+  padding-top: 3rem;
+  background: rgba(0, 131, 176, 0.1);
+}
+
 footer h5 {
   color: #0083B0;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+footer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer ul li {
+  margin: .5rem 0;
+}
+
+footer ul svg {
+  margin-right: .4rem;
+  padding: .1rem;
+}
+
+footer .copyright {
+  padding: 1rem 3rem;
+  margin: 1rem 2rem 0 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer .copyright p {
+  margin: 0;
 }
 /*# sourceMappingURL=custom.css.map */
