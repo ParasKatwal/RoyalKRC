@@ -558,4 +558,17 @@ footer{
             }
         }
     }
+    .load-more-btn{
+        margin-top: 3rem;
+        button{
+            color: color(text);
+        }
+        i{
+            border: 1px solid color(text);
+            border-radius: 50%;
+            padding: 1rem;
+            color: color(text);
+            margin-right: 1rem;
+        }
+    }
 }
