@@ -515,4 +515,151 @@ footer .copyright p {
   background: #0083B0;
   color: white;
 }
+
+.contact-header {
+  width: 100%;
+  height: auto;
+  padding-bottom: 3rem;
+  background: #00B4DB;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
+  background: linear-gradient(to bottom, #00B4DB, #0083B0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contact-header .custom-container {
+  padding-top: 10rem;
+}
+
+.contact-header__heading h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.contact-header__heading p {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.contact-header svg {
+  padding: .3rem;
+}
+
+.contact-header h4, .contact-header p {
+  color: white;
+}
+
+.contact-header i {
+  margin-right: .5rem;
+}
+
+.contact-header a {
+  margin-right: 1rem;
+}
+
+.contact-header .map-wrapper {
+  overflow: hidden;
+}
+
+.contact-header .map {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-in-touch {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-in-touch .bg {
+  position: absolute;
+  right: -35%;
+}
+
+.contact-in-touch .bg img {
+  width: 50%;
+  height: 50%;
+}
+
+.product-header {
+  width: 100%;
+  height: auto;
+  padding-bottom: 1rem;
+  background: #00B4DB;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
+  background: linear-gradient(to bottom, #00B4DB, #0083B0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.product-header .custom-container {
+  padding-top: 6rem;
+}
+
+.product-header h1 {
+  color: white;
+  margin: 0;
+  padding-bottom: 0 !important;
+}
+
+.product-list {
+  padding-bottom: 3rem;
+}
+
+.product-list .item-tab-nav {
+  margin-top: 1rem;
+}
+
+.product-list .nav-pills .nav-link {
+  border-radius: 0 !important;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid white;
+}
+
+.product-list .nav-pills .nav-link.active, .product-list .nav-pills .show > .nav-link {
+  color: black;
+  background-color: white !important;
+  border-bottom: 2px solid #0083B0;
+  border-radius: 0 !important;
+}
+
+.product-list .item-tab-wrapper {
+  margin-top: 2rem;
+}
+
+.product-list .item__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+
+.product-list .item__wrapper .item {
+  width: 100%;
+  -webkit-box-shadow: 5px 39px 39px -42px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 39px 39px -42px rgba(0, 0, 0, 0.3);
+}
+
+.product-list .item__wrapper .item .item__img {
+  height: 20rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-list .item__wrapper .item .item__info {
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.product-list .item__wrapper .item span {
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.product-list .item__wrapper .item p {
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=custom.css.map */
