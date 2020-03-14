@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 $color:(
     primary: #00B4DB,
@@ -20,7 +19,7 @@ html{
 body{
     box-sizing: border-box;
     // font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', ;
+    font-family: 'Roboto';
     padding: 0;
     margin: 0;
 }
@@ -37,10 +36,11 @@ a{
     transition: 0.5s;  
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: 'PT Serif';
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
 }
 p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 img{
     width: 100%;
@@ -76,6 +76,7 @@ ul{
         .nav-item{
             margin: 0 1rem;
             padding: 0 1rem;
+            font-size: 1.1rem;
             &:last-child{
                 margin: 0 0 0 1rem;
             }
@@ -123,14 +124,14 @@ ul{
         justify-content: center;
         flex-direction: column;
         h1{
-            font-size: 4rem;
+            font-size: 4.5rem;
         }
         p{
             margin-top: 1rem;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
         a{
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             margin-top: 2rem;
             transition: .5s ease;
             i{
@@ -195,9 +196,13 @@ ul{
     padding-top: 6rem;
     h1{
         color: color(primary );
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
     }
     h5{
         font-weight: 700;
+        font-size: 1.5rem;
     }
 }
 
@@ -212,6 +217,8 @@ ul{
     h1{
         text-align: center;
         margin: 2rem 0;
+        font-size: 2.5rem;
+        font-weight: 700;
     }
     &__slider{
         width: 60%;
@@ -236,13 +243,22 @@ ul{
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                h4{
+                    font-weight: bold;
+                    font-family: 'Roboto';
+                    font-size: 1.6rem;
+                }
                 p{
                     margin-bottom: 0;
+                    color: rgba($color: #FFFFFF, $alpha: .8);
                 }
             }
             .words{
                 margin-top: 2rem;
                 position: relative;
+                p{
+                    color: rgba($color: #FFFFFF, $alpha: .8);
+                }
             }
             .quote-svg{
                 i{

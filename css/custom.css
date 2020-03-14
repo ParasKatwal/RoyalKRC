@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 html {
   font-size: 12px;
@@ -9,7 +8,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   padding: 0;
   margin: 0;
 }
@@ -29,11 +28,12 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'PT Serif';
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 img {
@@ -77,6 +77,7 @@ ul {
 .top-navbar .navbar-nav .nav-item {
   margin: 0 1rem;
   padding: 0 1rem;
+  font-size: 1.1rem;
 }
 
 .top-navbar .navbar-nav .nav-item:last-child {
@@ -140,16 +141,16 @@ ul {
 }
 
 .landing-page__text-wrapper h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .landing-page__text-wrapper p {
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .landing-page__text-wrapper a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-top: 2rem;
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -223,10 +224,14 @@ ul {
 
 .why-royal h1 {
   color: #00B4DB;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 .why-royal h5 {
   font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .testimonial {
@@ -245,6 +250,8 @@ ul {
 .testimonial h1 {
   text-align: center;
   margin: 2rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .testimonial__slider {
@@ -285,13 +292,24 @@ ul {
           flex-direction: column;
 }
 
+.testimonial__slider__item .text h4 {
+  font-weight: bold;
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+}
+
 .testimonial__slider__item .text p {
   margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .testimonial__slider__item .words {
   margin-top: 2rem;
   position: relative;
+}
+
+.testimonial__slider__item .words p {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .testimonial__slider__item .quote-svg i {
