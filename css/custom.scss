@@ -384,6 +384,9 @@ footer{
     }
 }
 .about-service{
+    .container-service-svg{
+        width: 100%;
+    }
     &__heading{
         h1{
             color: color(text);
@@ -589,9 +592,22 @@ footer{
 }
 
 // RESPONSIVE
+@media (max-width: 1100px){
+    .about-header{
+        height: 60vh;
+    }
+}
+
 @media (max-width: 992px){
     .landing-page{
         &__text-wrapper{
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+    .about-header{
+        &__heading{
             h1{
                 font-size: 3rem;
             }
@@ -625,12 +641,63 @@ footer{
             width: 80%;
         }
     }
+    .about-header{
+        &__heading{
+            margin-top: 20%;
+        }
+        &__slide-wrapper{
+            margin-top: 0;
+            height: 20rem;
+            width: 20rem;
+        }
+    }
+    .about-mission{
+        padding-top: 10% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-service{
+        .b1{
+            padding-right: 0;
+            padding-bottom: 1rem;
+        }
+        .b2{
+            padding-left: 0;
+            padding-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 470px){
+    .product-list{
+        .nav-pills .nav-link {
+            font-size: 1.1rem;
+            padding: 1rem;
+        }
+    }
 }
 
 @media (max-width: 450px){
     .landing-page{
         &__slide-wrapper{
             margin-top: 2rem;
+        }
+    }
+    .about-header{
+        &__heading{
+            margin-top: 30%;
+        }
+    }
+    .about-mission{
+        padding-top: 15% !important;
+    }
+    .about-service{
+        .custom-svg{
+            svg{
+                width: 80% !important;
+                height: 100% !important;
+            }
         }
     }
 }
@@ -641,6 +708,29 @@ footer{
             h1{
                 font-size: 2.5rem;
             }
+        }
+    }
+    .about-header{
+        &__heading{
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .contact-header{
+        &__heading{
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 335px){
+    .product-list{
+        .nav-pills .nav-link {
+            font-size: 1rem;
+            padding: .7rem;
         }
     }
 }
